@@ -1,0 +1,200 @@
+// Imported files
+
+@import "./settings/mixins";
+@import "./settings/variable";
+
+
+/*
+=================================================
+Grid
+=================================================
+*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    // outline: 2px solid rgb(244, 248, 2);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.child {
+    box-sizing: border-box;
+    @include EleWH(60%, 600px);
+    @include EleGrd();
+    border-radius: 6px;
+    margin: 10px;
+
+}
+
+.prime2 h1 {
+    @include EleFlex();
+    padding: 5px;
+}
+
+
+/*
+=================================================
+Flex item
+=================================================
+*/
+
+.prime1,
+.btn {
+    @include EleFlex();
+}
+
+.prime3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.child {
+    @include EleFlex();
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 20px;
+}
+
+/*
+=================================================
+Radio
+=================================================
+*/
+
+input {
+    @include EleWH(20px, 20px);
+    vertical-align: bottom;
+}
+
+/*
+=================================================
+Image
+=================================================
+*/
+
+.prime1 img {
+    @include EleWH(200px, 200px);
+}
+
+
+/*
+=================================================
+Typography
+=================================================
+*/
+
+
+body // .prime2,
+
+// .btn
+    {
+    background-color: $Varbgcolor;
+}
+
+.container {
+    background-color: $ParentBgcolor;
+}
+
+// .prime1,
+// .prime3 {
+//     background-color: $Varbgcolor2;
+// }
+
+.prime2,
+.prime3 {
+    font-family: $FontFam;
+}
+
+.prime2 h1 {
+    font-weight: 300;
+    color: #fff;
+}
+
+.prime2 p {
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+}
+
+.prime3 h1 {
+    font-weight: 300;
+    color: #fff;
+}
+
+.prime3 p,
+.prime3 span {
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+}
+
+button {
+    font-weight: 600;
+    font-family: $FontFam;
+    color: #fff;
+}
+
+#Rad1 {
+    accent-color: $VarAct;
+}
+
+#Rad2 {
+    accent-color: $Varbgcolor2;
+}
+
+#Rad3 {
+    accent-color: $VarAct2;
+}
+
+button {
+    @include EleGrdBtn();
+}
+
+/*
+===========================================
+Button
+===========================================
+*/
+
+button {
+    border: none;
+    padding: 15px 60px;
+    border-radius: 1px 20px;
+}
+
+
+/*
+===========================================
+Checked
+===========================================
+*/
+
+img {
+    display: none;
+}
+
+.prime3:has(#Rad1:checked)~.prime1 #bird {
+    display: flex;
+}
+
+.prime3:has(#Rad2:checked)~.prime1 #duck {
+    display: flex;
+}
+
+.prime3:has(#Rad3:checked)~.prime1 #glass {
+    display: flex;
+}
+
+// When using a radio or checkbox to cause a display on an ele, which is not a parent of the checkbox or radio, you must ensure that the parent of the element is a sibling with the parent of the checkbox.
+
+ 

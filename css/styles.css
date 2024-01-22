@@ -1,0 +1,174 @@
+/*
+=================================================
+Grid
+=================================================
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.child {
+  box-sizing: border-box;
+  width: 60%;
+  height: 600px;
+  background: radial-gradient(rgb(22, 170, 180), rgb(19, 0, 128));
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.prime2 h1 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+/*
+=================================================
+Flex item
+=================================================
+*/
+.prime1,
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.prime3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 20px;
+}
+
+/*
+=================================================
+Radio
+=================================================
+*/
+input {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+/*
+=================================================
+Image
+=================================================
+*/
+.prime1 img {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+=================================================
+Typography
+=================================================
+*/
+body {
+  background-color: aqua;
+}
+
+.container {
+  background-color: rgb(21, 211, 132);
+}
+
+.prime2,
+.prime3 {
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+.prime2 h1 {
+  font-weight: 300;
+  color: #fff;
+}
+
+.prime2 p {
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+}
+
+.prime3 h1 {
+  font-weight: 300;
+  color: #fff;
+}
+
+.prime3 p,
+.prime3 span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+}
+
+button {
+  font-weight: 600;
+  font-family: Lato, Helvetica, sans-serif;
+  color: #fff;
+}
+
+#Rad1 {
+  accent-color: red;
+}
+
+#Rad2 {
+  accent-color: blue;
+}
+
+#Rad3 {
+  accent-color: #000;
+}
+
+button {
+  background: linear-gradient(150deg, rgb(22, 49, 83), rgb(7, 83, 71));
+}
+
+/*
+===========================================
+Button
+===========================================
+*/
+button {
+  border: none;
+  padding: 15px 60px;
+  border-radius: 1px 20px;
+}
+
+/*
+===========================================
+Checked
+===========================================
+*/
+img {
+  display: none;
+}
+
+.prime3:has(#Rad1:checked) ~ .prime1 #bird {
+  display: flex;
+}
+
+.prime3:has(#Rad2:checked) ~ .prime1 #duck {
+  display: flex;
+}
+
+.prime3:has(#Rad3:checked) ~ .prime1 #glass {
+  display: flex;
+}/*# sourceMappingURL=styles.css.map */

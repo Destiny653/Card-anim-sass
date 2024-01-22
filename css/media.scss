@@ -1,0 +1,24 @@
+@import "./settings/variable";
+@import "./settings/mixins";
+
+
+@media all and (max-width: 450px) {
+
+
+    body {
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .child {
+        box-sizing: border-box;
+        @include EleWH(100%, 750px);
+        @include EleGrd();
+        border-radius: 6px;
+        margin: 10px;
+
+    }
+
+}

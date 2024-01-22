@@ -1,0 +1,18 @@
+@mixin EleWH($W,$H) {
+    width: $W;
+    height: $H;
+}
+
+@mixin EleFlex() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin EleGrdBtn() {
+   background: linear-gradient(150deg, rgb(22, 49, 83), rgb(7, 83, 71));
+}
+
+@mixin EleGrd() {
+    background: radial-gradient(rgb(22, 170, 180), rgb(19, 0, 128));
+}
+
