@@ -117,14 +117,18 @@ Typography
 }
 
 .prime2 h1 {
-    font-weight: 300;
+    font-weight: 500;
     color: #fff;
+    font-size: 30px;
 }
 
 .prime2 p {
     font-weight: 400;
     font-size: 20px;
     color: #fff;
+}
+.prime2 :first-child {
+    padding-top: 30px;
 }
 
 .prime3 h1 {
