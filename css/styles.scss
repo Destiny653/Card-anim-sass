@@ -106,21 +106,10 @@ Typography
 */
 
 
-body // .prime2,
-
-// .btn
-    {
-    background-color: $Varbgcolor;
-}
-
 .container {
     background-color: $ParentBgcolor;
 }
 
-// .prime1,
-// .prime3 {
-//     background-color: $Varbgcolor2;
-// }
 
 .prime2,
 .prime3 {
@@ -186,26 +175,6 @@ button {
 }
 
 
-/*
-===========================================
-Checked
-===========================================
-*/
-
- 
-// .prime3:has(#Rad1:checked)~.prime1 #bird {
-//     display: flex;
-// }
-
-// .prime3:has(#Rad2:checked)~.prime1 #duck {
-//     display: flex;
-// }
-
-// .prime3:has(#Rad3:checked)~.prime1 #glass {
-//     display: flex;
-// }
-
-// When using a radio or checkbox to cause a display on an ele, which is not a parent of the checkbox or radio, you must ensure that the parent of the element is a sibling with the parent of the checkbox.
 /*
 ============================================
 Animation
