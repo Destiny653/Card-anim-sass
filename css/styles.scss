@@ -37,8 +37,8 @@ body {
 
 .prime1 {
     position: relative;
-    height: 240px;
-    width: 200px;
+    height: 340px;
+    width: 300px;
     margin: auto;
     overflow: hidden;
     border-radius: 6px;
@@ -70,7 +70,7 @@ Flex item
 .child {
     @include EleFlex();
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 20px;
     padding: 20px;
 }
 
@@ -92,7 +92,7 @@ Image
 */
 
 .prime1 img {
-    @include EleWH(200px, 240px);
+    @include EleWH(auto, 340px);
     position: absolute;
     border-radius: 6px;
 }
