@@ -203,7 +203,7 @@ Animation
   }
   5% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(100px);
   }
   10% {
     opacity: 1;
@@ -215,7 +215,7 @@ Animation
   }
   30% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-100px);
   }
   80% {
     opacity: 0;
