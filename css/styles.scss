@@ -26,7 +26,6 @@ body {
     justify-content: center;
 }
 
-
 .child {
     box-sizing: border-box;
     @include EleWH(60%, 600px);
@@ -34,6 +33,16 @@ body {
     border-radius: 6px;
     margin: 10px;
 
+}
+
+.prime1 {
+    position: relative;
+    height: 240px;
+    width: 200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 3px solid rgba(60, 60, 102, 0.199);
 }
 
 .prime2 h1 {
@@ -83,8 +92,11 @@ Image
 */
 
 .prime1 img {
-    @include EleWH(200px, 200px);
+    @include EleWH(200px, 240px);
+    position: absolute;
+    border-radius: 6px;
 }
+
 
 
 /*
@@ -121,8 +133,8 @@ body // .prime2,
 }
 
 .prime2 p {
-    font-weight: 600;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -140,6 +152,7 @@ body // .prime2,
 
 button {
     font-weight: 600;
+    font-size: 20px;
     font-family: $FontFam;
     color: #fff;
 }
@@ -179,22 +192,72 @@ Checked
 ===========================================
 */
 
-img {
-    display: none;
-}
+ 
+// .prime3:has(#Rad1:checked)~.prime1 #bird {
+//     display: flex;
+// }
 
-.prime3:has(#Rad1:checked)~.prime1 #bird {
-    display: flex;
-}
+// .prime3:has(#Rad2:checked)~.prime1 #duck {
+//     display: flex;
+// }
 
-.prime3:has(#Rad2:checked)~.prime1 #duck {
-    display: flex;
-}
-
-.prime3:has(#Rad3:checked)~.prime1 #glass {
-    display: flex;
-}
+// .prime3:has(#Rad3:checked)~.prime1 #glass {
+//     display: flex;
+// }
 
 // When using a radio or checkbox to cause a display on an ele, which is not a parent of the checkbox or radio, you must ensure that the parent of the element is a sibling with the parent of the checkbox.
+/*
+============================================
+Animation
+============================================
+ */
 
- 
+.prime1 img {
+    animation: fam 14s linear 0s infinite ;
+    opacity: 0;
+    overflow-x: hidden;
+}
+
+.prime1 img:nth-child(2) {
+    animation-delay: 2s;
+}
+.prime1 img:nth-child(3) {
+    animation-delay: 4s;
+}
+.prime1 img:nth-child(4) {
+    animation-delay: 6s;
+}
+.prime1 img:nth-child(5) {
+    animation-delay: 10s;
+}
+.prime1 img:nth-child(6) {
+    animation-delay: 12s;
+}
+
+@keyframes fam {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+        transform: translateX(200px); 
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+    25% {
+        opacity: 1;
+        transform: translatxeX(0);
+    }
+    30% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    80% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
