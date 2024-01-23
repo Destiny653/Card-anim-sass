@@ -172,7 +172,7 @@ Animation
 ============================================
  */
 .prime1 img {
-  animation: fam 14s linear 0s infinite;
+  animation: fam 12s linear 0s infinite;
   opacity: 0;
   overflow-x: hidden;
 }
