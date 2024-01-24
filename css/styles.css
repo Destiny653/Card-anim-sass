@@ -82,12 +82,7 @@ Image
 Typography
 =================================================
 */
-.container {
-  background-color: rgb(21, 211, 132);
-}
-
-.prime2,
-.prime3 {
+.prime2 {
   font-family: Lato, Helvetica, sans-serif;
 }
 
@@ -107,35 +102,11 @@ Typography
   padding-top: 30px;
 }
 
-.prime3 h1 {
-  font-weight: 300;
-  color: #fff;
-}
-
-.prime3 p,
-.prime3 span {
-  font-weight: 600;
-  font-size: 12px;
-  color: #fff;
-}
-
 button {
   font-weight: 600;
   font-size: 20px;
   font-family: Lato, Helvetica, sans-serif;
   color: #fff;
-}
-
-#Rad1 {
-  accent-color: red;
-}
-
-#Rad2 {
-  accent-color: blue;
-}
-
-#Rad3 {
-  accent-color: #000;
 }
 
 button {
@@ -164,7 +135,7 @@ Animation
 ============================================
  */
 .prime1 img {
-  animation: fam 24s linear 0s infinite;
+  animation: fam 26s linear 0s infinite;
   opacity: 0;
   overflow-x: hidden;
 }

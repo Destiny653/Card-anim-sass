@@ -94,13 +94,7 @@ Typography
 */
 
 
-.container {
-    background-color: $ParentBgcolor;
-}
-
-
-.prime2,
-.prime3 {
+.prime2 {
     font-family: $FontFam;
 }
 
@@ -119,35 +113,11 @@ Typography
     padding-top: 30px;
 }
 
-.prime3 h1 {
-    font-weight: 300;
-    color: #fff;
-}
-
-.prime3 p,
-.prime3 span {
-    font-weight: 600;
-    font-size: 12px;
-    color: #fff;
-}
-
 button {
     font-weight: 600;
     font-size: 20px;
     font-family: $FontFam;
     color: #fff;
-}
-
-#Rad1 {
-    accent-color: $VarAct;
-}
-
-#Rad2 {
-    accent-color: $Varbgcolor2;
-}
-
-#Rad3 {
-    accent-color: $VarAct2;
 }
 
 button {
@@ -177,7 +147,7 @@ Animation
  */
 
 .prime1 img {
-    animation: fam 24s linear 0s infinite ;
+    animation: fam 26s linear 0s infinite ;
     opacity: 0;
     overflow-x: hidden;
 }
